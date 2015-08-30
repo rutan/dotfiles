@@ -1,0 +1,16 @@
+[core]
+    editor = vim
+    whitespace = cr-at-eol
+    excludesfile = ~/.gitignore
+[user]
+    name = ru_shalm
+    email = ru_shalm@hazimu.com
+[color]
+    ui = auto
+[alias]
+    co = checkout
+    st = status
+    graph = log --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+[push]
+    default = simple
+
