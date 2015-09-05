@@ -107,6 +107,9 @@ set nostartofline
 set shellslash
 set wildmenu wildmode=list:longest,full
 
+" backspaceで何でも消す
+set backspace=indent,eol,start
+
 " sudoし忘れたとき
 cnoremap w!! w !sudo tee > /dev/null %<CR> :e!<CR>
 
