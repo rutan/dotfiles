@@ -51,6 +51,14 @@ NeoBundle 'motus/pig.vim'
 " colorscheme
 NeoBundle 'tomasr/molokai'
 
+" editorconfig
+NeoBundle 'editorconfig/editorconfig-vim'
+
+" syntax check
+NeoBundle 'scrooloose/syntastic'
+let g:syntastic_ruby_checkers = ['rubocop']
+let g:syntastic_javascript_checkers = ['eslint']
+
 call neobundle#end()
 filetype plugin indent on
 NeoBundleCheck
