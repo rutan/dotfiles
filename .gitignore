@@ -1,4 +1,10 @@
+vendor/bundle
+
 # global .gitignore
+
+.bundle
+.idea
+*.iml
 
 # Created by https://www.gitignore.io
 

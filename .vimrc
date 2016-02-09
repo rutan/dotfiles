@@ -26,8 +26,14 @@ NeoBundle 'nathanaelkane/vim-indent-guides'
 " 複数行コメントアウト
 NeoBundle 'tomtom/tcomment_vim'
 
+" ctags
+NeoBundle 'szw/vim-tags'
+
 " Ruby
 NeoBundle 'tpope/vim-endwise'
+
+" emmet
+NeoBundle 'mattn/emmet-vim'
 
 " syntax
 NeoBundle 'othree/html5.vim'
@@ -38,6 +44,9 @@ NeoBundle 'hail2u/vim-css3-syntax'
 NeoBundle 'cakebaker/scss-syntax.vim'
 NeoBundle 'plasticboy/vim-markdown'
 NeoBundle 'elixir-lang/vim-elixir'
+NeoBundle 'posva/vim-vue'
+NeoBundle 'mxw/vim-jsx'
+NeoBundle 'motus/pig.vim'
 
 " colorscheme
 NeoBundle 'tomasr/molokai'
@@ -48,7 +57,6 @@ NeoBundleCheck
 
 " charset ----------------------------------------------------------------------
 set encoding=utf-8
-set fileencodings=iso-2022-jp,sjis,utf-8
 if has('autocmd')
     function! AU_ReCheck_FENC()
         if &fileencoding =~# 'iso-2022-jp' && search("[^\x01-\x7e]", 'n') == 0
@@ -63,9 +71,10 @@ if exists('&ambiwidth')
 endif
 
 " display ----------------------------------------------------------------------
-set number      " 行番号
-set ruler       " カーソル位置の行数を表示
-set showmode    " モード表示
+set number       " 行番号
+set ruler        " カーソル位置の行数を表示
+set showmode     " モード表示
+set nofoldenable " 折りたたみ無し
 
 " 不可視文字
 set list
@@ -169,6 +178,9 @@ let g:indent_guides_start_level = 2
 let g:indent_guides_auto_colors = 0
 autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  ctermbg=235
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=234
+
+" [plugin] jsx -----------------------------------------------------------------
+let g:jsx_ext_required = 0
 
 " [lang] Ruby ------------------------------------------------------------------
 au BufNewFile,BufRead *.rb set tabstop=2 shiftwidth=2
