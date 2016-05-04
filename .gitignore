@@ -1,4 +1,5 @@
 vendor/bundle
+.envrc
 
 # global .gitignore
 

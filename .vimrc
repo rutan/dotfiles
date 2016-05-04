@@ -38,6 +38,8 @@ NeoBundle 'mattn/emmet-vim'
 " syntax
 NeoBundle 'othree/html5.vim'
 NeoBundle 'tpope/vim-haml'
+NeoBundle 'slim-template/vim-slim'
+NeoBundle 'digitaltoad/vim-pug'
 NeoBundle 'vim-javascript'
 NeoBundle 'groenewege/vim-less'
 NeoBundle 'hail2u/vim-css3-syntax'
