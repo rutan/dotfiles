@@ -12,8 +12,9 @@ fi
 
 # link
 ln -s ${dotfiles_path}/.vim ~/.gitconfig
-ln -s ${dotfiles_path}/.vim ~/.gitignore
-ln -s ${dotfiles_path}/.vim ~/.tmux.conf
-ln -s ${dotfiles_path}/.vim ~/.vimrc
-ln -s ${dotfiles_path}/.vim ~/.zshrc
+ln -s ${dotfiles_path}/.gitignore ~/.gitignore
+ln -s ${dotfiles_path}/.tmux.conf ~/.tmux.conf
+ln -s ${dotfiles_path}/.vimrc ~/.vimrc
+ln -s ${dotfiles_path}/.zshrc ~/.zshrc
+ln -s ${dotfiles_path}/.npmrc ~/.npmrc
 
