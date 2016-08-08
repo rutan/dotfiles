@@ -49,6 +49,8 @@ NeoBundle 'elixir-lang/vim-elixir'
 NeoBundle 'posva/vim-vue'
 NeoBundle 'mxw/vim-jsx'
 NeoBundle 'motus/pig.vim'
+NeoBundle 'rhysd/vim-crystal'
+NeoBundle 'rust-lang/rust.vim'
 
 " colorscheme
 NeoBundle 'tomasr/molokai'
