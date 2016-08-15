@@ -41,6 +41,7 @@ NeoBundle 'tpope/vim-haml'
 NeoBundle 'slim-template/vim-slim'
 NeoBundle 'digitaltoad/vim-pug'
 NeoBundle 'vim-javascript'
+NeoBundle 'pangloss/vim-javascript'
 NeoBundle 'groenewege/vim-less'
 NeoBundle 'hail2u/vim-css3-syntax'
 NeoBundle 'cakebaker/scss-syntax.vim'
@@ -196,6 +197,9 @@ let g:jsx_ext_required = 0
 
 " [lang] Ruby ------------------------------------------------------------------
 au BufNewFile,BufRead *.rb set tabstop=2 shiftwidth=2
+
+" [lang] Crystal ---------------------------------------------------------------
+au BufNewFile,BufRead *.cr set tabstop=2 shiftwidth=2
 
 " [lang] CSS -------------------------------------------------------------------
 au BufNewFile,BufRead *.scss set filetype=scss
