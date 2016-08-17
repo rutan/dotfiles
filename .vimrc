@@ -52,6 +52,7 @@ NeoBundle 'mxw/vim-jsx'
 NeoBundle 'motus/pig.vim'
 NeoBundle 'rhysd/vim-crystal'
 NeoBundle 'rust-lang/rust.vim'
+NeoBundle 'fatih/vim-go'
 
 " colorscheme
 NeoBundle 'tomasr/molokai'
@@ -203,6 +204,9 @@ au BufNewFile,BufRead *.cr set tabstop=2 shiftwidth=2
 
 " [lang] CSS -------------------------------------------------------------------
 au BufNewFile,BufRead *.scss set filetype=scss
+
+" [lang] Golang ----------------------------------------------------------------
+au FileType go setlocal sw=4 ts=4 sts=4 noet
 
 " key --------------------------------------------------------------------------
 set pastetoggle=<F12>
