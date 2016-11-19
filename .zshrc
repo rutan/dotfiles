@@ -47,6 +47,9 @@ setopt EXTENDED_HISTORY
 setopt auto_pushd
 setopt pushd_ignore_dups
 
+# path
+export PATH=${HOME}/bin:/usr/local/bin:${PATH}
+
 # tmux
 show-current-dir-as-window-name() {
   tmux set-window-option window-status-format " #I ${PWD:t} " > /dev/null
@@ -54,14 +57,15 @@ show-current-dir-as-window-name() {
 show-current-dir-as-window-name
 add-zsh-hook chpwd show-current-dir-as-window-name
 
-# path
-export PATH=${HOME}/bin:${PATH}
-
 # ENV
 export EDITOR=vim
 
 # alias
-alias ll='ls -al'
+if [ "$(uname)" = 'Darwin' ]; then
+    alias ll='ls -alG'
+else
+    alias ll='ls -al'
+fi
 alias vi='vim'
 alias gti='git'
 alias be='bundle exec'
