@@ -60,6 +60,12 @@ add-zsh-hook chpwd show-current-dir-as-window-name
 # ENV
 export EDITOR=vim
 
+# npm
+export NPM_CONFIG_INIT_AUTHOR_NAME='ru_shalm'
+export NPM_CONFIG_INIT_AUTHOR_EMAIL='ru_shalm@hazimu.com'
+export NPM_CONFIG_INIT_LICENSE='MIT'
+export NPM_CONFIG_INIT_VERSION='0.1.0'
+
 # alias
 if [ "$(uname)" = 'Darwin' ]; then
     alias ll='ls -alG'
