@@ -54,6 +54,7 @@ NeoBundle 'rhysd/vim-crystal'
 NeoBundle 'rust-lang/rust.vim'
 NeoBundle 'fatih/vim-go'
 NeoBundle 'leafgarland/typescript-vim'
+NeoBundle 'nikvdp/ejs-syntax'
 
 " colorscheme
 NeoBundle 'tomasr/molokai'
