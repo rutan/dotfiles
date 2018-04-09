@@ -77,7 +77,7 @@ alias gti='git'
 alias be='bundle exec'
 alias ber='bundle exec ruby'
 alias bes='bundle exec spring'
-alias binstall='bundle install --path ./vendor/bundle'
+alias binstall='bundle install -j4'
 alias nun='npm run'
 alias natch='npm run watch'
 
