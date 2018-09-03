@@ -66,6 +66,15 @@ export NPM_CONFIG_INIT_AUTHOR_EMAIL='ru_shalm@hazimu.com'
 export NPM_CONFIG_INIT_LICENSE='MIT'
 export NPM_CONFIG_INIT_VERSION='0.1.0'
 
+# anyenv
+if [ -d ${HOME}/.anyenv ]; then
+    export PATH=${HOME}/.anyenv/bin:${PATH}
+    eval "$(anyenv init -)"
+    for ANYENV in `ls ${HOME}/.anyenv/envs`; do
+        export PATH=${HOME}/.anyenv/envs/${ANYENV}/shims:${PATH}
+    done
+fi
+
 # alias
 if [ "$(uname)" = 'Darwin' ]; then
     alias ll='ls -alG'
