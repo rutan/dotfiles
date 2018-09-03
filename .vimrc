@@ -200,10 +200,16 @@ let g:jsx_ext_required = 0
 
 " [lang] Ruby ------------------------------------------------------------------
 au BufNewFile,BufRead *.rb set tabstop=2 shiftwidth=2
+au BufNewFile,BufRead *.yml set tabstop=2 shiftwidth=2
+au BufNewFile,BufRead *.yaml set tabstop=2 shiftwidth=2
 
 " [lang] Crystal ---------------------------------------------------------------
 au BufNewFile,BufRead *.cr set tabstop=2 shiftwidth=2
 
+" [lang] JavaScript ------------------------------------------------------------
+au BufNewFile,BufRead *.js set tabstop=2 shiftwidth=2
+au BufNewFile,BufRead *.ts set tabstop=2 shiftwidth=2
+"
 " [lang] CSS -------------------------------------------------------------------
 au BufNewFile,BufRead *.scss set filetype=scss
 
