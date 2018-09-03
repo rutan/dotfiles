@@ -1,5 +1,6 @@
 vendor/bundle
 .envrc
+node_modules
 
 # global .gitignore
 
