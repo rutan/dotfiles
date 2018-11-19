@@ -85,10 +85,7 @@ alias vi='vim'
 alias gti='git'
 alias be='bundle exec'
 alias ber='bundle exec ruby'
-alias bes='bundle exec spring'
 alias binstall='bundle install -j4'
-alias nun='npm run'
-alias natch='npm run watch'
 
 # .local
 [ -f ~/.zshrc.local ] && source ~/.zshrc.local
