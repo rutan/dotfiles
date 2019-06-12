@@ -79,7 +79,7 @@ fi
 if [ "$(uname)" = 'Darwin' ]; then
     alias ll='ls -alG'
 else
-    alias ll='ls -al'
+    alias ll='ls -al --color=auto'
 fi
 alias vi='vim'
 alias gti='git'
