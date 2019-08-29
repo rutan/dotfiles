@@ -64,7 +64,7 @@ NeoBundle 'editorconfig/editorconfig-vim'
 
 " syntax check
 NeoBundle 'scrooloose/syntastic'
-let g:syntastic_ruby_checkers = ['rubocop']
+" let g:syntastic_ruby_checkers = ['rubocop']
 let g:syntastic_javascript_checkers = ['eslint']
 
 call neobundle#end()
