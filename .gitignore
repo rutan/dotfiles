@@ -2,6 +2,8 @@ vendor/bundle
 .envrc
 .clasprc.json
 node_modules
+docker-compose.local.yml
+docker-compose.local.test.yml
 
 # global .gitignore
 
