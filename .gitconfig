@@ -3,7 +3,7 @@
     whitespace = cr-at-eol
     excludesfile = ~/.gitignore
 [user]
-    name = ru_shalm
+    name = rutan
     email = ru_shalm@hazimu.com
 [color]
     ui = auto
