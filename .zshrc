@@ -34,7 +34,7 @@ precmd () {
 WATCH_MARK=$'\U2617'
 ARROW_MARK=$'\U21F8'
 PROMPT="%F{71}%n@%m %F{106}%~ %F{1}%1v%F{239}${WATCH_MARK} %T
-%F{245}%(!,#,$)%K{0}%F{255} "
+%F{245}%(!,#,$)%F{255} "
 RPROMPT=""
 
 # 履歴
@@ -65,15 +65,6 @@ export NPM_CONFIG_INIT_AUTHOR_NAME='ru_shalm'
 export NPM_CONFIG_INIT_AUTHOR_EMAIL='ru_shalm@hazimu.com'
 export NPM_CONFIG_INIT_LICENSE='MIT'
 export NPM_CONFIG_INIT_VERSION='0.1.0'
-
-# anyenv
-if [ -d ${HOME}/.anyenv ]; then
-    export PATH=${HOME}/.anyenv/bin:${PATH}
-    eval "$(anyenv init -)"
-    for ANYENV in `ls ${HOME}/.anyenv/envs`; do
-        export PATH=${HOME}/.anyenv/envs/${ANYENV}/shims:${PATH}
-    done
-fi
 
 # alias
 if [ "$(uname)" = 'Darwin' ]; then
