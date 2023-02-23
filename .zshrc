@@ -17,6 +17,8 @@ compinit
 #zstyle ':completion:*' list-colors '$LSCOLORS'
 zstyle ':completion:*:processes' command 'ps x -o pid,s,args'
 
+fpath=(~/.zsh/completion $fpath)
+
 # VCS settings
 autoload -Uz add-zsh-hook
 autoload -Uz vcs_info
