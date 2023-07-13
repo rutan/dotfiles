@@ -1,3 +1,8 @@
+# zinit https://github.com/zdharma-continuum/zinit
+ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
+[ ! -d $ZINIT_HOME ] && mkdir -p "$(dirname $ZINIT_HOME)"
+[ ! -d $ZINIT_HOME/.git ] && git clone https://github.com/zdharma-continuum/zinit.git "$ZINIT_HOME"
+source "${ZINIT_HOME}/zinit.zsh"
 
 # 日本語
 export LANG=ja_JP.UTF-8
@@ -67,6 +72,8 @@ export NPM_CONFIG_INIT_AUTHOR_NAME='ru_shalm'
 export NPM_CONFIG_INIT_AUTHOR_EMAIL='ru_shalm@hazimu.com'
 export NPM_CONFIG_INIT_LICENSE='MIT'
 export NPM_CONFIG_INIT_VERSION='0.1.0'
+
+zinit load azu/ni.zsh
 
 # alias
 if [ "$(uname)" = 'Darwin' ]; then
