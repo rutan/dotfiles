@@ -86,6 +86,7 @@ alias gti='git'
 alias be='bundle exec'
 alias ber='bundle exec ruby'
 alias binstall='bundle install -j4'
+alias nr='ni run'
 
 # .local
 [ -f ~/.zshrc.local ] && source ~/.zshrc.local
