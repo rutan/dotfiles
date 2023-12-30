@@ -16,5 +16,4 @@ ln -s ${dotfiles_path}/.gitconfig ~/.gitconfig
 ln -s ${dotfiles_path}/.tmux.conf ~/.tmux.conf
 ln -s ${dotfiles_path}/.vimrc ~/.vimrc
 ln -s ${dotfiles_path}/.zshrc ~/.zshrc
-ln -s ${dotfiles_path}/.npmrc ~/.npmrc
 
