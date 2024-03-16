@@ -2,6 +2,7 @@
     editor = vim
     whitespace = cr-at-eol
     excludesfile = ~/.gitignore
+    quotepath = false
 [user]
     name = rutan
     email = ru_shalm@hazimu.com
