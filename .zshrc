@@ -49,7 +49,11 @@ zstyle ':vcs_info:fossil:*' actionformats 'fossil:(merge:%b)'
 
 precmd () {
     vcs_info
-    [[ -n "$vcs_info_msg_0_" ]] && psvar[1]="$vcs_info_msg_0_"
+    if [[ -n "$vcs_info_msg_0_" ]]; then
+        psvar[1]="$vcs_info_msg_0_"
+    else
+        psvar[1]=""
+    fi
 }
 
 WATCH_MARK=$'\U2617'
