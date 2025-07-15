@@ -90,7 +90,9 @@ alias fost='fossil status'
 
 # === tmux ===
 show-current-dir-as-window-name() {
-  tmux set-window-option window-status-format " #I ${PWD:t} " > /dev/null
+  if [[ -n $TMUX ]] && tmux info &>/dev/null; then
+    tmux set-window-option window-status-format " #I ${PWD:t} " > /dev/null
+  fi
 }
 show-current-dir-as-window-name
 add-zsh-hook chpwd show-current-dir-as-window-name
