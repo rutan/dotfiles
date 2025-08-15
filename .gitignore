@@ -1,68 +1,83 @@
-vendor/bundle
-.envrc
-.clasprc.json
-node_modules
+# ===========================
+# Editor / IDE
+# ===========================
+.idea/
+*.iml
+
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+
+# ===========================
+# Ruby
+# ===========================
+.bundle
+vendor/bundle/
+
+# ===========================
+# Node.js
+# ===========================
+node_modules/
+
+# ===========================
+# Docker
+# ===========================
 docker-compose.local.yml
 docker-compose.local.test.yml
 
-# claude code
+# ===========================
+# Local tools
+# ===========================
+# for direnv
+.envrc
+
+# for clasp
+.clasprc.json
+
+# for claude code
 .claude/settings.local.json
 
-# global .gitignore
+# ===========================
+# Log etc.
+# ===========================
+*.log
+*.tmp
+.cache/
 
-.bundle
-.idea
-*.iml
-
-# Created by https://www.gitignore.io
-
-### Windows ###
-# Windows image file caches
+# ===========================
+# Windows
+# ===========================
 Thumbs.db
 ehthumbs.db
-
-# Folder config file
 Desktop.ini
-
-# Recycle Bin used on file shares
 $RECYCLE.BIN/
-
-# Windows Installer files
 *.cab
 *.msi
 *.msm
 *.msp
-
-# Windows shortcuts
 *.lnk
 
-
-### OSX ###
+# ===========================
+# macOS
+# ===========================
 .DS_Store
 .AppleDouble
 .LSOverride
-
-# Thumbnails
 ._*
-
-# Files that might appear on external disk
 .Spotlight-V100
 .Trashes
-
-# Directories potentially created on remote AFP share
 .AppleDB
 .AppleDesktop
 Network Trash Folder
 Temporary Items
 .apdisk
 
-
-### Linux ###
+# ===========================
+# Linux
+# ===========================
 *~
-
-# KDE directory preferences
 .directory
-
-# Linux trash folder which might appear on any partition or disk
 .Trash-*
-
