@@ -5,6 +5,9 @@ node_modules
 docker-compose.local.yml
 docker-compose.local.test.yml
 
+# claude code
+.claude/settings.local.json
+
 # global .gitignore
 
 .bundle
