@@ -59,7 +59,7 @@ precmd () {
 WATCH_MARK=$'\U2617'
 PROMPT="%F{71}%n@%m %F{106}%~ %F{1}%1v%F{239} ${WATCH_MARK} %T
 %F{245}%(!,#,$)%F{255} "
-RPROMPT="%F{240}%D{%Y-%m-%d} %T%f"
+RPROMPT=""
 
 # === 履歴設定 ===
 export HISTFILE=${HOME}/.zsh_history
