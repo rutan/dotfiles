@@ -59,9 +59,6 @@ nnoremap <F11> :Lexplore<CR>
 " 次バッファを Space で切り替え
 nnoremap <Space> :bnext<CR>
 
-" 矢印/ｊｋで画面折返し対応移動
-nnoremap <Up> gk | nnoremap <Down> gj | nnoremap k gk | nnoremap j gj
-
 " paste モード
 set pastetoggle=<F12>
 
